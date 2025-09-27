@@ -1,0 +1,51 @@
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8069;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+        
+        #imagePreview,
+        #processedImage {
+            max-width: 100%;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .loading {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .size {
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            max-width: auto;
+            max-height: auto;
+        }
+        
+        .imag {
+            /* background-color: aqua; */
+            align-items: center;
+            position: relative;
+            max-width: 100%;
+            padding: 10px;
+            justify-content: space-around;
+        }

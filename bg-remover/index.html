@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Remover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Remove Image Background</h2>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="processButton">Remove Background</button>
+        <div class="loading hidden">Processing...</div>
+        <div class="imag">
+
+            <img id="imagePreview" alt="Image Preview" class="size">
+            <img id="processedImage" alt="Processed Image" class="size">
+        </div>
+        <a id="downloadButton" class="hidden" download="processed.png">Download Processed Image</a>
+        <button id="resetButton" class="hidden">Reset</button>
+    </div>
+          <script src="script.js"></script>
+
+</body>
+
+</html>

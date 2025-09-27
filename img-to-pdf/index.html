@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image to PDF Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="theme-toggle" class="toggle-container">
+        <div class="toggle-handle">
+            <i class="fas fa-sun toggle-icon sun-icon"></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Image to PDF Converter</h1>
+        <p>A simple, fast tool to convert your images into a single PDF document.</p>
+        
+        <div class="input-group">
+            <label for="imageInput" class="file-label">
+                <i class="fas fa-upload"></i> Select Images
+            </label>
+            <input type="file" id="imageInput" accept="image/jpeg, image/png, image/gif" multiple>
+        </div>
+
+        <div class="preview-container" id="imagePreview">
+            <p class="placeholder-text">Selected images will appear here.</p>
+        </div>
+        
+        <button id="convertBtn">
+            <i class="fas fa-file-pdf"></i> Convert to PDF
+        </button>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

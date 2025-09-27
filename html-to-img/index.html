@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML to Image Converter</title>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>HTML to Image Converter</h1>
+    <div class="controls">
+      <input type="file" accept=".html" id="htmlFile" />
+      <br/>
+      <button onclick="convertToImage()">Convert to Image</button>
+    </div>
+    <div id="preview">
+      <p style="text-align:center;color:#888;">Uploaded HTML content will appear here.</p>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
