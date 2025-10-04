@@ -1,30 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tool-Verse — Web Utilities</title>
+  <!-- Essential Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="language" content="English">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 
-  <!-- Fonts & Icons -->
+  <!-- Title & Description -->
+  <title>Tool-Verse — Free Online Web Utilities | Img→PDF, HTML→Image, Background Remover & More</title>
+  <meta name="description" content="Tool-Verse offers a collection of free, fast, and reliable web utilities including Image-to-PDF, Background Remover, HTML-to-Image, and more — all online, no install required.">
+  <meta name="keywords" content="toolverse, online tools, web utilities, free converters, image to pdf, background remover, html to image, pdf maker, online image tools">
+
+  <!-- Canonical & Favicons -->
+  <link rel="canonical" href="https://yourusername.github.io/">
+  <link rel="icon" href="https://yourusername.github.io/assets/favicon.png" type="image/png">
+
+  <!-- Open Graph (Facebook/LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tool-Verse — Free Online Web Utilities">
+  <meta property="og:description" content="Convert, compress, capture and edit — free online tools for everyone.">
+  <meta property="og:url" content="https://yourusername.github.io/">
+  <meta property="og:image" content="https://yourusername.github.io/assets/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tool-Verse — Free Online Web Utilities">
+  <meta name="twitter:description" content="Try Image→PDF, HTML→Image, Background Remover & more — fast and free.">
+  <meta name="twitter:image" content="https://yourusername.github.io/assets/preview.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Tool-Verse",
+    "url": "https://yourusername.github.io/",
+    "description": "A hub of free online web utilities: image converters, background remover, HTML to image, and more.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tool-Verse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://yourusername.github.io/assets/logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourusername.github.io/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Styles & Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
- 
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">TV</div>
-      <h1>Tool-Verse</h1>
-      <p class="lead">Handy web utilities — Img→PDF, HTML→Image, Background Remover & more.</p>
-    </header>
 
-    <section class="grid">
+<body>
+  <header class="site-header">
+    <div class="logo" aria-label="Tool-Verse Logo">TV</div>
+    <h1>Tool-Verse — Handy Web Utilities</h1>
+    <p class="lead">Convert, capture, and optimize online — Img→PDF, HTML→Image, Background Remover & more.</p>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="tools">
+    <section class="grid" aria-label="Tool categories">
       <a class="card" href="img-to-pdf/">
         <div class="iconwrap icon-pdf"><i class="fa-solid fa-file-pdf"></i></div>
         <div>
-          <h3>Image → PDF</h3>
-          <p>Convert images into a single PDF quickly.</p>
+          <h2>Image → PDF</h2>
+          <p>Convert multiple images into a single PDF quickly online.</p>
           <span class="badge">Fast</span>
         </div>
       </a>
@@ -32,8 +88,8 @@
       <a class="card" href="bg-remover/">
         <div class="iconwrap icon-bg"><i class="fa-solid fa-cut"></i></div>
         <div>
-          <h3>Background Remover</h3>
-          <p>Remove image backgrounds automatically.</p>
+          <h2>Background Remover</h2>
+          <p>Automatically remove backgrounds from photos in seconds.</p>
           <span class="badge">Auto</span>
         </div>
       </a>
@@ -41,8 +97,8 @@
       <a class="card" href="html-to-img/">
         <div class="iconwrap icon-html"><i class="fa-solid fa-image"></i></div>
         <div>
-          <h3>HTML → Image</h3>
-          <p>Snapshot any webpage or HTML snippet to PNG/JPEG.</p>
+          <h2>HTML → Image</h2>
+          <p>Capture any webpage or HTML code as a high-quality image.</p>
           <span class="badge">Snapshot</span>
         </div>
       </a>
@@ -50,18 +106,28 @@
       <a class="card" href="others/">
         <div class="iconwrap icon-others"><i class="fa-solid fa-toolbox"></i></div>
         <div>
-          <h3>Other Tools</h3>
-          <p>Compress, crop, batch convert & more.</p>
+          <h2>Other Tools</h2>
+          <p>Compress, crop, batch convert and explore more utilities.</p>
           <span class="badge">Expand</span>
         </div>
       </a>
     </section>
 
-    <footer>
-      <small>© <strong>Tool-Verse</strong> • Built with ❤️ — Respect copyrights</small>
-    </footer>
-  </div>
+    <section id="about">
+      <h2>About Tool-Verse</h2>
+      <p>Tool-Verse is an open collection of web utilities built to simplify daily digital tasks. Everything runs in your browser — no downloads, ads, or sign-ups. Our mission is to make quick conversions and edits accessible to everyone.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have feedback or suggestions? Email us at 
+        <a href="mailto:contact@toolverse.dev">contact@toolverse.dev</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <strong>Tool-Verse</strong> 2025 • Built with ❤️ — Respect copyrights</small>
+  </footer>
 </body>
 </html>
-
-
